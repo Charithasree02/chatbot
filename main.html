@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imports & Exports</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h2>TradeWorld</h2>
+        <div class="nav-links">
+            <a href="#">About Us</a>
+            <a href="#" onclick="openForm('login')">Log In</a>
+        </div>
+    </div>
+
+    <!-- Hero Section with Background Image -->
+    <div class="hero">
+        <div class="overlay">
+            <h1>Global Trade Made Easy</h1>
+            <p>Seamless Imports & Exports with Secure Transactions</p>
+            <button class="btn" onclick="openForm('signup')">Get Started</button>
+        </div>
+    </div>
+
+    <!-- Pop-up Form -->
+    <div class="form-popup" id="authForm">
+        <form class="form-container">
+            <h2 id="formTitle">Sign Up</h2>
+
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" id="name" placeholder="Full Name" required>
+            </div>
+
+            <div class="input-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+
+            <button type="submit" class="btn" id="authButton">Sign Up</button>
+            <div class="google-btn" onclick="googleSignUp()">Sign Up with Google</div>
+            
+            <p style="text-align:center; margin-top: 10px;">
+                <a href="#" id="toggleLink" onclick="toggleForm()">Switch to Log In</a>
+            </p>
+            
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 TradeWorld | Contact: support@tradeworld.com | Phone: +123 456 7890</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
